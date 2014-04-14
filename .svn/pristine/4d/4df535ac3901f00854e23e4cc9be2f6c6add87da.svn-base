@@ -1,0 +1,30 @@
+package server;
+
+import java.util.ArrayList;
+
+/**
+ * TODO Put here a description of what this class does.
+ * 
+ * @author millerlj. Created Apr 12, 2014.
+ */
+public class GameRunner {
+	private ArrayList<Player> players = new ArrayList<Player>();
+
+	
+	
+	/**
+	 * Adds a player to the list
+	 * @param newPlayer
+	 */
+	public void addPlayer(Player newPlayer) {
+		players.add(newPlayer);
+	}
+	
+	public Player getPlayer(String name) {
+		for(Player p:players) {
+			if(p.name.equalsIgnoreCase(name))
+				return p;
+		}
+		return null;
+	}
+}

@@ -1,0 +1,34 @@
+package server;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author millerlj.
+ *         Created Apr 12, 2014.
+ */
+public class Player {
+	public int latitude;
+	public int longitude;
+	public boolean flagHolder;
+	public int team;
+	public String name;
+	
+	public Player(int lat, int longi,String name,int team) {
+		this.latitude=lat;
+		this.longitude=longi;
+		this.flagHolder=false;
+		this.name=name;
+		this.team=team;
+	}
+	
+	public void setFlagHolder(boolean flag){
+		this.flagHolder=flag;
+	}
+	
+	public void setPosition(int lati,int longi){
+		this.latitude=lati;
+		this.longitude=longi;
+	}
+	
+	
+}
